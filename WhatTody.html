@@ -78,11 +78,10 @@
 
 </body>
 <script>
-    const currentDate = new Date();
     var startDate = new Date("2024-09-20");
     var endDate = new Date();
-    var timeDiff = Math.abs(endDate.getTime() - startDate.getTime());
-    var diffDays = Math.floor(timeDiff / (1000 * 3600 * 24));
+    var timeDiff = Math.abs(endDate.getTime() - endDate.getTimezoneOffset() * 60000 - startDate.getTime());
+    var diffDays = Math.floor(timeDiff / 86400000);
     var a = diffDays % 10 + 1;
     var b = diffDays % 5 + 1;
     document.getElementById('a' + a).classList.add('select');
