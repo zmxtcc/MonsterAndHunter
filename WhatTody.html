@@ -52,36 +52,41 @@
 </head>
 
 <body>
-    <div class="title">无限红装今日掉落</div>
+    <div class="title">
+        无限红装今日掉落</div>
     <div class="bo">
         <main>
-            <a href="javascript:void(0)" id="a1">无极大剑</a>
-            <a href="javascript:void(0)" id="a2">破败之刃</a>
-            <a href="javascript:void(0)" id="a3">黄金弓</a>
-            <a href="javascript:void(0)" id="a4">死亡法杖</a>
-            <a href="javascript:void(0)" id="a5">鲜血之刃</a>
-            <a href="javascript:void(0)" id="a6">神圣之弩</a>
-            <a href="javascript:void(0)" id="a7">恶魔短刀</a>
-            <a href="javascript:void(0)" id="a8">雷电拳套</a>
-            <a href="javascript:void(0)" id="a9">赤红战斧</a>
-            <a href="javascript:void(0)" id="a10">暗影之弓</a>
+            <a href="javascript:void(0)" id="a1">破败之刃</a>
+            <a href="javascript:void(0)" id="a2">黄金弓</a>
+            <a href="javascript:void(0)" id="a3">死亡法杖</a>
+            <a href="javascript:void(0)" id="a4">鲜血之刃</a>
+            <a href="javascript:void(0)" id="a5">神圣之弩</a>
+            <a href="javascript:void(0)" id="a6">恶魔短刀</a>
+            <a href="javascript:void(0)" id="a7">雷电拳套</a>
+            <a href="javascript:void(0)" id="a8">赤红战斧</a>
+            <a href="javascript:void(0)" id="a9">暗影之弓</a>
+            <a href="javascript:void(0)" id="a10">无极大剑</a>
         </main>
         <main>
-            <a href="javascript:void(0)" id="b1">恶魔之眼</a>
-            <a href="javascript:void(0)" id="b2">女妖头盔</a>
-            <a href="javascript:void(0)" id="b3">神圣腰带</a>
-            <a href="javascript:void(0)" id="b4">迅灵腰带</a>
-            <a href="javascript:void(0)" id="b5">静谧腰带</a>
+            <a href="javascript:void(0)" id="b1">女妖头盔</a>
+            <a href="javascript:void(0)" id="b2">神圣腰带</a>
+            <a href="javascript:void(0)" id="b3">迅灵腰带</a>
+            <a href="javascript:void(0)" id="b4">静谧腰带</a>
+            <a href="javascript:void(0)" id="b5">恶魔之眼</a>
         </main>
     </div>
-
-
 </body>
 <script>
-    var startDate = new Date("2024-09-20");
-    var endDate = new Date();
-    var timeDiff = Math.abs(endDate.getTime() - endDate.getTimezoneOffset() * 60000 - startDate.getTime());
-    var diffDays = Math.floor(timeDiff / 86400000);
+    //    var startDate = new Date("2024-09-20");
+    //    var endDate = new Date();
+    //    var timeDiff = Math.abs(endDate.getTime() - endDate.getTimezoneOffset() * 60000 - startDate.getTime());
+    //    var diffDays = Math.floor(timeDiff / 86400000);
+    //    var a = diffDays % 10 + 1;
+    //    var b = diffDays % 5 + 1;
+    //    document.getElementById('a' + a).classList.add('select');
+    //    document.getElementById('b' + b).classList.add('select');
+
+    var diffDays = (new Date()).getDate() - 1;
     var a = diffDays % 10 + 1;
     var b = diffDays % 5 + 1;
     document.getElementById('a' + a).classList.add('select');
